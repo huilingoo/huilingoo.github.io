@@ -61,6 +61,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2048" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/26/2048/" class="article-date">
+  <time datetime="2018-01-26T01:34:25.000Z" itemprop="datePublished">2018-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/26/2048/">2048(我的第一个js入门项目，更新中)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学了一段时间的js，写过一些简单的项目，但大都是参考网上的代码，几乎没有独立完成过。<br>决定写2048小游戏，这个游戏的完成给了我很大的编程信心。</p>
+<p>先看下效果<br><a href="https://huilingoo.github.io/2048/" target="_blank" rel="noopener">https://huilingoo.github.io/2048/</a></p>
+<p>首先思路很重要，玩家按下“上下左右”后，发生了啥事儿：<br>1、随机出现2或者4的方格；<br>2、判断该方向上的数字是否相等，相等则相加；</p>
+<p>用二维数组来表示，i表示横，j表示竖。初始化每个格子都是零，玩家按键时随机变化一个零，然后根据方向判断。<br>比如按下“右”键，判断每个横排右边的数字是否为零或者相等，如果是则相加。但是会发现累加上最后一个数会出现<br>数组越界的问题。解决方法是在最外层加上一层格子，以前是4乘4，现在是6乘6。</p>
+<p>写完了，问了师兄的建议，回答是代码太乱了。然后自己百度，知道了原来写代码不只是要实现功能，还有编码规范，遵循<br>五大原则，代码需要优美，足够健壮，扩展性够强。关于编码规范，累积之后，用另外一个章节。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/26/2048/" data-id="cjcvb4j360002pcr3rslxo36h" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/">javaScript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-wechat" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/25/wechat/" class="article-date">
@@ -87,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/25/wechat/" data-id="cjcv940dj0005ysr3d0l390wo" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/25/wechat/" data-id="cjcvb4j3f0005pcr3meh3ah0s" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -126,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/22/github/" data-id="cjcv940dc0003ysr3kiaugxmz" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/22/github/" data-id="cjcvb4j3h0006pcr31noqr51l" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
@@ -165,7 +208,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/22/css3/" data-id="cjcv940cq0000ysr37ye5qnp4" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/22/css3/" data-id="cjcvb4j2y0000pcr37h96gh3c" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li></ul>
@@ -214,12 +257,12 @@
 <h3 id="后续操作"><a href="#后续操作" class="headerlink" title="后续操作"></a>后续操作</h3><p>1、想要给文章添加样式，可直接在.md文件中添加</p>
 <p>2、修改文章后，git bash here执行以下操作：<br>  hexo clean<br>  hexo generate<br>  hexo deploy</p>
 <p>3、创建新文章  hexo new “文章名”</p>
-<p>4、在文章中添加图片，比较方便的方法，建立一个与_posts同级的文件夹images，里面放图片，<br>用html的方式插入，比如：<img src="/images/github_01.jpg"></p>
+<p>4、在文章中添加图片，比较方便的方法，建立一个与_posts同级的文件夹images，里面放图片，<br>用html的方式插入，比如：<br><img src="/images/github.jpg"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/21/first-page/" data-id="cjcv940d30001ysr3nd7ctekz" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/21/first-page/" data-id="cjcvb4j3d0004pcr35zwowt75" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -266,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/20/hello-world/" data-id="cjcv940dg0004ysr3260ek258" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/20/hello-world/" data-id="cjcvb4j3l0009pcr3ltw87vsb" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -289,7 +332,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/">javaScript</a></li></ul>
     </div>
   </div>
 
@@ -299,7 +342,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/css3/" style="font-size: 10px;">css3</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+      <a href="/tags/css3/" style="font-size: 10px;">css3</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/javaScript/" style="font-size: 10px;">javaScript</a>
     </div>
   </div>
 
@@ -321,6 +364,10 @@
       <ul>
         
           <li>
+            <a href="/2018/01/26/2048/">2048(我的第一个js入门项目，更新中)</a>
+          </li>
+        
+          <li>
             <a href="/2018/01/25/wechat/">wechat</a>
           </li>
         
@@ -334,10 +381,6 @@
         
           <li>
             <a href="/2018/01/21/first-page/">如何快速搭建我的博客</a>
-          </li>
-        
-          <li>
-            <a href="/2018/01/20/hello-world/">Hello World</a>
           </li>
         
       </ul>

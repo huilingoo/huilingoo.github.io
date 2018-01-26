@@ -5,15 +5,19 @@
   
 
   
-  <title>categories | huiling blog</title>
+  <title>2048(我的第一个js入门项目，更新中) | huiling blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+  <meta name="description" content="学了一段时间的js，写过一些简单的项目，但大都是参考网上的代码，几乎没有独立完成过。决定写2048小游戏，这个游戏的完成给了我很大的编程信心。 先看下效果https://huilingoo.github.io/2048/ 首先思路很重要，玩家按下“上下左右”后，发生了啥事儿：1、随机出现2或者4的方格；2、判断该方向上的数字是否相等，相等则相加； 用二维数组来表示，i表示横，j表示竖。初始化每个格">
+<meta name="keywords" content="javaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2048(我的第一个js入门项目，更新中)">
+<meta property="og:url" content="http://yoursite.com/2018/01/26/2048/index.html">
 <meta property="og:site_name" content="huiling blog">
-<meta property="og:updated_time" content="2018-01-25T05:53:58.559Z">
+<meta property="og:description" content="学了一段时间的js，写过一些简单的项目，但大都是参考网上的代码，几乎没有独立完成过。决定写2048小游戏，这个游戏的完成给了我很大的编程信心。 先看下效果https://huilingoo.github.io/2048/ 首先思路很重要，玩家按下“上下左右”后，发生了啥事儿：1、随机出现2或者4的方格；2、判断该方向上的数字是否相等，相等则相加； 用二维数组来表示，i表示横，j表示竖。初始化每个格">
+<meta property="og:updated_time" content="2018-01-26T02:26:36.751Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="2048(我的第一个js入门项目，更新中)">
+<meta name="twitter:description" content="学了一段时间的js，写过一些简单的项目，但大都是参考网上的代码，几乎没有独立完成过。决定写2048小游戏，这个游戏的完成给了我很大的编程信心。 先看下效果https://huilingoo.github.io/2048/ 首先思路很重要，玩家按下“上下左右”后，发生了啥事儿：1、随机出现2或者4的方格；2、判断该方向上的数字是否相等，相等则相加； 用二维数组来表示，i表示横，j表示竖。初始化每个格">
   
     <link rel="alternate" href="/atom.xml" title="huiling blog" type="application/atom+xml">
   
@@ -60,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-2048" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/categories/index.html" class="article-date">
-  <time datetime="2018-01-25T05:53:28.000Z" itemprop="datePublished">2018-01-25</time>
+    <a href="/2018/01/26/2048/" class="article-date">
+  <time datetime="2018-01-26T01:34:25.000Z" itemprop="datePublished">2018-01-26</time>
 </a>
     
   </div>
@@ -74,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      categories
+      2048(我的第一个js入门项目，更新中)
     </h1>
   
 
@@ -82,17 +86,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>学了一段时间的js，写过一些简单的项目，但大都是参考网上的代码，几乎没有独立完成过。<br>决定写2048小游戏，这个游戏的完成给了我很大的编程信心。</p>
+<p>先看下效果<br><a href="https://huilingoo.github.io/2048/" target="_blank" rel="noopener">https://huilingoo.github.io/2048/</a></p>
+<p>首先思路很重要，玩家按下“上下左右”后，发生了啥事儿：<br>1、随机出现2或者4的方格；<br>2、判断该方向上的数字是否相等，相等则相加；</p>
+<p>用二维数组来表示，i表示横，j表示竖。初始化每个格子都是零，玩家按键时随机变化一个零，然后根据方向判断。<br>比如按下“右”键，判断每个横排右边的数字是否为零或者相等，如果是则相加。但是会发现累加上最后一个数会出现<br>数组越界的问题。解决方法是在最外层加上一层格子，以前是4乘4，现在是6乘6。</p>
+<p>写完了，问了师兄的建议，回答是代码太乱了。然后自己百度，知道了原来写代码不只是要实现功能，还有编码规范，遵循<br>五大原则，代码需要优美，足够健壮，扩展性够强。关于编码规范，累积之后，用另外一个章节。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/categories/index.html" data-id="cjcvb4j350001pcr38k30oi8n" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/26/2048/" data-id="cjcvb4j360002pcr3rslxo36h" class="article-share-link">Teilen</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/">javaScript</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/25/wechat/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">wechat</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
