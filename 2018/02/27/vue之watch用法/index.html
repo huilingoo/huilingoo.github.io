@@ -5,14 +5,19 @@
   
 
   
-  <title>Tag: vue | huiling blog</title>
+  <title>vue之watch用法 | huiling blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="huiling blog">
-<meta property="og:url" content="http://yoursite.com/tags/vue/index.html">
+  <meta name="description" content="watch方法，是用于观察vue实例上的数据变动，代码如下：data() {                    return {                        shopping: [{                            check: false,                            img: “img/01.jpg”,">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue之watch用法">
+<meta property="og:url" content="http://yoursite.com/2018/02/27/vue之watch用法/index.html">
 <meta property="og:site_name" content="huiling blog">
+<meta property="og:description" content="watch方法，是用于观察vue实例上的数据变动，代码如下：data() {                    return {                        shopping: [{                            check: false,                            img: “img/01.jpg”,">
+<meta property="og:updated_time" content="2018-02-27T01:50:14.445Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="huiling blog">
+<meta name="twitter:title" content="vue之watch用法">
+<meta name="twitter:description" content="watch方法，是用于观察vue实例上的数据变动，代码如下：data() {                    return {                        shopping: [{                            check: false,                            img: “img/01.jpg”,">
   
     <link rel="alternate" href="/atom.xml" title="huiling blog" type="application/atom+xml">
   
@@ -59,116 +64,54 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/vue之watch用法/" class="archive-article-date">
-  <time datetime="2018-02-27T01:47:42.000Z" itemprop="datePublished">Feb 27</time>
+        <section id="main"><article id="post-vue之watch用法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/27/vue之watch用法/" class="article-date">
+  <time datetime="2018-02-27T01:47:42.000Z" itemprop="datePublished">2018-02-27</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/vue之watch用法/">vue之watch用法</a>
+    <h1 class="article-title" itemprop="name">
+      vue之watch用法
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/vue数据传递/" class="archive-article-date">
-  <time datetime="2018-02-27T01:42:39.000Z" itemprop="datePublished">Feb 27</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/vue数据传递/">vue组件通信</a>
-    </h1>
-  
+        <p>watch方法，是用于观察vue实例上的数据变动，代码如下：<br>data() {<br>                    return {<br>                        shopping: [{<br>                            check: false,<br>                            img: “img/01.jpg”,<br>                            imgText: ‘太子龙男装’,<br>                            shoppingtext: ‘颜色分类 黑色’,<br>                            price: 120,<br>                            num: 0,<br>                            opr: [‘移入收藏夹’, ‘删除’]<br>                        }, {<br>                            check: false,<br>                            img: ‘./img/01.jpg’,<br>                            imgText: ‘太子龙男装’,<br>                            shoppingtext: ‘颜色分类 黑色’,<br>                            price: 199,<br>                            num: 0,<br>                            opr: [‘移入收藏夹’, ‘删除’]<br>                        }],<br>                        total_num: 0<br>                   }<br>                }<br>computed: {<br>                    countTotal: function() {<br>                        let total = 0;<br>                        this.shopping.forEach(function(item) {<br>                            total += item.num<br>                        })<br>                        return total;<br>                    }<br>                },<br>                watch: {<br>                    shopping: {<br>                        handler: function() {<br>                            this.total_num=this.countTotal;<br>                        },<br>                        deep: true<br>                    }<br>                }</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/vue跨域/" class="archive-article-date">
-  <time datetime="2018-02-27T01:20:07.000Z" itemprop="datePublished">Feb 27</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/vue跨域/">vue解决跨域问题</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/25/vue豆瓣练习/" class="archive-article-date">
-  <time datetime="2018-02-25T12:25:32.000Z" itemprop="datePublished">Feb 25</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/27/vue之watch用法/" data-id="cje4zx19r000cs4r3jybrd67h" class="article-share-link">Teilen</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/25/vue豆瓣练习/">豆瓣练习（我的第一个vue项目）</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/01/31/vue/" class="archive-article-date">
-  <time datetime="2018-01-31T08:14:39.000Z" itemprop="datePublished">Jan 31</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/31/vue/">vue如何上手</a>
-    </h1>
-  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/02/27/vue数据传递/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">vue组件通信</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
