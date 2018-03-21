@@ -5,14 +5,22 @@
   
 
   
-  <title>Archiv: 2018/2 | huiling blog</title>
+  <title>vue登录 | huiling blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="huiling blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/02/index.html">
+  <meta name="description" content="登录功能的流程是这样的：用户输入账号密码，点击登录按钮，后台返回一个token（会话令牌），每次点击登录的会话令牌不一样，将token存入headers里面。在整个登录过程中，token失效会回到登录界面 第一步、路由拦截首先在定义路由的时候就需要多添加一个自定义字段requireAuth，用于判断该路由的访问是否需要登录。如果用户已经登录，则顺利进入路由， 否则就进入登录页面。 第二步、拦截器要">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue登录">
+<meta property="og:url" content="http://yoursite.com/2018/03/14/vue登录/index.html">
 <meta property="og:site_name" content="huiling blog">
+<meta property="og:description" content="登录功能的流程是这样的：用户输入账号密码，点击登录按钮，后台返回一个token（会话令牌），每次点击登录的会话令牌不一样，将token存入headers里面。在整个登录过程中，token失效会回到登录界面 第一步、路由拦截首先在定义路由的时候就需要多添加一个自定义字段requireAuth，用于判断该路由的访问是否需要登录。如果用户已经登录，则顺利进入路由， 否则就进入登录页面。 第二步、拦截器要">
+<meta property="og:image" content="http://yoursite.com/images/登录-02.png">
+<meta property="og:image" content="http://yoursite.com/images/登录-01.png">
+<meta property="og:updated_time" content="2018-03-14T01:06:01.908Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="huiling blog">
+<meta name="twitter:title" content="vue登录">
+<meta name="twitter:description" content="登录功能的流程是这样的：用户输入账号密码，点击登录按钮，后台返回一个token（会话令牌），每次点击登录的会话令牌不一样，将token存入headers里面。在整个登录过程中，token失效会回到登录界面 第一步、路由拦截首先在定义路由的时候就需要多添加一个自定义字段requireAuth，用于判断该路由的访问是否需要登录。如果用户已经登录，则顺利进入路由， 否则就进入登录页面。 第二步、拦截器要">
+<meta name="twitter:image" content="http://yoursite.com/images/登录-02.png">
   
     <link rel="alternate" href="/atom.xml" title="huiling blog" type="application/atom+xml">
   
@@ -59,97 +67,56 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/vue之watch用法/" class="archive-article-date">
-  <time datetime="2018-02-27T01:47:42.000Z" itemprop="datePublished">Feb 27</time>
+        <section id="main"><article id="post-vue登录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/14/vue登录/" class="article-date">
+  <time datetime="2018-03-14T00:32:34.000Z" itemprop="datePublished">2018-03-14</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/vue之watch用法/">vue之watch用法</a>
+    <h1 class="article-title" itemprop="name">
+      vue登录
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/vue数据传递/" class="archive-article-date">
-  <time datetime="2018-02-27T01:42:39.000Z" itemprop="datePublished">Feb 27</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/vue数据传递/">vue组件通信</a>
-    </h1>
-  
+        <p>登录功能的流程是这样的：用户输入账号密码，点击登录按钮，后台返回一个token（会话令牌），<br>每次点击登录的会话令牌不一样，将token存入headers里面。在整个登录过程中，token失效会<br>回到登录界面</p>
+<p>第一步、路由拦截<br>首先在定义路由的时候就需要多添加一个自定义字段requireAuth，用于判断该路由的访问是否需要登录。<br>如果用户已经登录，则顺利进入路由， 否则就进入登录页面。<br><img src="/images/登录-02.png"></p>
+<p>第二步、拦截器<br>要想统一处理所有http请求和响应，就得用上 axios 的拦截器。通过配置http response inteceptor，<br>当后端接口返回401 Unauthorized（未授权），让用户重新登录。<br><img src="/images/登录-01.png"></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/vue跨域/" class="archive-article-date">
-  <time datetime="2018-02-27T01:20:07.000Z" itemprop="datePublished">Feb 27</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/vue跨域/">vue解决跨域问题</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/25/vue豆瓣练习/" class="archive-article-date">
-  <time datetime="2018-02-25T12:25:32.000Z" itemprop="datePublished">Feb 25</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/14/vue登录/" data-id="cjf0v7g5u000o4kr32w95r9py" class="article-share-link">Teilen</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/25/vue豆瓣练习/">豆瓣练习（我的第一个vue项目）</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/02/27/vue之watch用法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">vue之watch用法</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         

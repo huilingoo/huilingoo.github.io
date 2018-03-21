@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,47 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-vue登录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/14/vue登录/" class="article-date">
+  <time datetime="2018-03-14T00:32:34.000Z" itemprop="datePublished">2018-03-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/14/vue登录/">vue登录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>登录功能的流程是这样的：用户输入账号密码，点击登录按钮，后台返回一个token（会话令牌），<br>每次点击登录的会话令牌不一样，将token存入headers里面。在整个登录过程中，token失效会<br>回到登录界面</p>
+<p>第一步、路由拦截<br>首先在定义路由的时候就需要多添加一个自定义字段requireAuth，用于判断该路由的访问是否需要登录。<br>如果用户已经登录，则顺利进入路由， 否则就进入登录页面。<br><img src="/images/登录-02.png"></p>
+<p>第二步、拦截器<br>要想统一处理所有http请求和响应，就得用上 axios 的拦截器。通过配置http response inteceptor，<br>当后端接口返回401 Unauthorized（未授权），让用户重新登录。<br><img src="/images/登录-01.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/14/vue登录/" data-id="cjf0v7g5u000o4kr32w95r9py" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-vue之watch用法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -88,7 +129,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/27/vue之watch用法/" data-id="cje50g2jh000aj4r3691rirva" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/27/vue之watch用法/" data-id="cjf0v7g8a000z4kr30n85ztlc" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
@@ -127,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/27/vue数据传递/" data-id="cje50g2jl000cj4r3wic4p5m3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/27/vue数据传递/" data-id="cjf0v7g4d000f4kr3ed8yc3a8" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
@@ -165,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/27/vue跨域/" data-id="cje50g2k2000ij4r3uc09v0h3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/27/vue跨域/" data-id="cjf0v7g59000k4kr38bp1z1lv" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
@@ -199,11 +240,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1、如何vue的严格模式<br>在webpack.base.config.js里面去掉<br>{<br>    test: /.(js|vue)$/,<br>    loader: ‘eslint-loader’,<br>    enforce: ‘pre’,<br>    include: [resolve(‘src’), resolve(‘test’)],<br>    options: {<br>        formatter: require(‘eslint-friendly-formatter’)<br>    }<br>},</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/25/vue豆瓣练习/" data-id="cje50g2jx000gj4r32fqex9t8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/25/vue豆瓣练习/" data-id="cjf0v7g51000j4kr3g9hhbeho" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
@@ -244,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/31/vue/" data-id="cje50g2jd0009j4r3z94abetw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/31/vue/" data-id="cjf0v7g4s000h4kr3rxpnjl44" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
@@ -284,7 +326,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/30/前后端交互/" data-id="cje50g2kd000mj4r3r9eluo2l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/30/前后端交互/" data-id="cjf0v7g6e000t4kr366r8vd1p" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/">javaScript</a></li></ul>
@@ -324,7 +366,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/30/svn/" data-id="cje50g2jp000ej4r3ussax59j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/30/svn/" data-id="cjf0v7g0u00054kr3ag2seogm" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svn/">svn</a></li></ul>
@@ -367,7 +409,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/26/2048/" data-id="cje50g2ir0002j4r3mq3kke0b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/26/2048/" data-id="cjf0v7fz600004kr3yp3y0825" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/">javaScript</a></li></ul>
@@ -408,51 +450,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/25/wechat/" data-id="cje50g2k7000kj4r3aghdt274" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/25/wechat/" data-id="cjf0v7g5f000l4kr3soknmkzh" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信小程序/">微信小程序</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/22/github/" class="article-date">
-  <time datetime="2018-01-22T00:41:52.000Z" itemprop="datePublished">2018-01-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/22/github/">关于github</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="关于github上的静态页面演示"><a href="#关于github上的静态页面演示" class="headerlink" title="关于github上的静态页面演示"></a>关于github上的静态页面演示</h3><p>1、选择要展示的项目（静态页面名称必须是index.html）<br><img src="/images/github_01.jpg"></p>
-<p>2、新建一个分支命名为gh-pages<br><img src="/images/github_02.jpg"></p>
-<p>3、进入改演示项目Settings，选择Branches,将默认改为gh-pages,再update就行了<br><img src="/images/github_03.jpg"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/22/github/" data-id="cje50g2j10004j4r3vvljsehj" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
 
     </footer>
   </div>
@@ -465,7 +466,7 @@
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">weiter &raquo;</a>
   </nav>
 
 </section>
@@ -496,9 +497,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
     </div>
   </div>
 
@@ -506,9 +507,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/03/14/vue登录/">vue登录</a>
+          </li>
         
           <li>
             <a href="/2018/02/27/vue之watch用法/">vue之watch用法</a>
@@ -524,10 +529,6 @@
         
           <li>
             <a href="/2018/02/25/vue豆瓣练习/">豆瓣练习（我的第一个vue项目）</a>
-          </li>
-        
-          <li>
-            <a href="/2018/01/31/vue/">vue如何上手</a>
           </li>
         
       </ul>
